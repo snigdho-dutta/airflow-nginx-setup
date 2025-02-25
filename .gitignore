@@ -1,0 +1,10 @@
+# airflow
+airflow/logs
+airflow/dags/__pycache__
+
+# global
+*.env
+*.pem
+
+# nginx
+nginx/ssl/**/*.pem
