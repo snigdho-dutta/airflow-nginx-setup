@@ -10,16 +10,15 @@
   - Dockerfile
   - requirements.txt
 - nginx/
-  - conf.dev.d/
-    - airflow.conf
-  - conf.prod.d/
-    - airflow.conf
+  - ${NGINX_CONF_DIR:-conf.dev.d}/
+    - default.conf
   - Dockerfile
 - compose.yml
 
 ```.env``` Variables
 
 - NGINX_CONF_DIR
+- NGNIX_SERVER_NAME
 - FERNET_KEY
 - AIRFLOW_PROJ_DIR
 - AIRFLOW_UID
